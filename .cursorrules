@@ -1,0 +1,44 @@
+Backend Development (Node.js, TypeScript, Express)
+
+Structured and Logical Thinking
+- Define clear API contracts using TypeScript interfaces and shared types.
+- Break backend flows into modular handlers: routing → validation → business logic → response.
+
+Code Implementation Standards
+- Use Express for routing and middleware management.
+- Configure TypeScript with strict mode, and enforce `noImplicitAny` and `strictNullChecks`.
+- Organize backend code into layered architecture: `routes/`, `controllers/`, `services/`, `models/`, and `utils/`.
+- Use `Zod` for request body validation and schema enforcement in routes.
+- Implement type-safe service boundaries between route logic and business logic layers.
+
+API Design and Validation
+- Expose RESTful endpoints with meaningful routes (`/tickets`, `/users`, etc.).
+- Validate all request inputs with `Zod`, and return informative error responses using proper HTTP status codes.
+- Ensure CORS is configured securely, allowing only whitelisted origins (e.g., Vercel frontend).
+
+Security and Performance
+- Use `helmet` for security headers and `cors` for controlled cross-origin access.
+- Sanitize input and avoid direct user input in any file operations or dynamic logic.
+- Plan for eventual persistence with file-based or database storage (PostgreSQL, MySQL, MongoDB, SQL-based systems).
+
+Testing and Debugging
+- Add basic unit tests for controllers and services using `Vitest` or `Jest`.
+- Log requests and errors using a consistent logger like `pino` or `winston`.
+
+Hosting and Infrastructure
+- Deploy using platforms like Railway, Render, Fly.io, or DigitalOcean for scalable, containerized backend hosting.
+- Set up `.env` handling via `dotenv` and define type-safe configuration loading.
+- Use process managers like PM2 (for VPS) or built-in orchestration on PaaS.
+
+Focus Technologies (Backend)
+- Node.js, TypeScript, Express
+- Zod (for validation)
+- PostgreSQL, MySQL, MongoDB, SQL
+- CORS, Helmet (for secure middleware)
+- Vitest or Jest (for testing)
+- Railway, Render, Fly.io, DigitalOcean (for backend deployment)
+
+Code Style
+- Consistent folder structure (`src/routes`, `src/controllers`, `src/models`, etc.)
+- Descriptive function and variable names aligned with their domain purpose.
+- Type-safe and declarative service functions, keeping side effects isolated.
