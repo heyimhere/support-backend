@@ -503,8 +503,8 @@ All API responses follow a consistent format:
 ---
 
 **Related Repositories:**
-- [Frontend Repository](../support-frontend) - Next.js UI application
-- [Documentation](./ENV_SETUP.md) - Environment setup guide
+- [Frontend Repository](https://github.com/heyimhere/support-frontend) - Next.js UI application
+- [Documentation](https://github.com/heyimhere/support-frontend/blob/main/ENV_SETUP.md) - Environment setup guide
 
 **Need Help?**
 Check the health endpoint at `http://localhost:3001/api/health` to verify your installation. 
